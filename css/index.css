@@ -1,0 +1,77 @@
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main > div {
+  flex: 50%;
+}
+.bold-text {
+  line-height: 1;
+}
+main h1 {
+  font-size: 4em;
+}
+main .name {
+  font-size: 3.7em;
+  font-weight: 600;
+  display: block;
+  word-spacing: 1px;
+}
+.description {
+  margin-top: 30px;
+  line-height: 1.7;
+}
+p .highlight {
+  background-color: rgba(48, 92, 204, 0.5);
+  border-radius: 5px;
+  padding: 3px;
+}
+.tools {
+  margin-top: 7px;
+  display: flex;
+  gap: 20px;
+}
+.tools p {
+  background-color: rgba(48, 92, 204, 0.5);
+  padding: 2px 3px;
+  border-radius: 3px;
+}
+.hire {
+  padding: 20px 35px;
+  margin-top: 3em;
+  background-color: rgba(48, 92, 204, 0.5);
+  outline: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.social-media a {
+  padding-bottom: 20px;
+  position: relative;
+  bottom: 20%;
+  left: 10%;
+  font-size: 20px;
+}
+.animate__animated.animate__bounce {
+  --animate-duration: 10s;
+}
+.animate__animated.animate__backInRight {
+  --animate-duration: 1s;
+}
+@media (max-width: 900px) {
+  .tools p {
+    background-color: rgba(48, 92, 204, 0.5);
+    padding: 2px 20px;
+    border-radius: 3px;
+    text-align: center;
+  }
+}

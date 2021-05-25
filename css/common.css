@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+body {
+  background-image: url("../img/sharpen-enlarge-2x-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-position: center; */
+}
+.img-overlay {
+  background-color: rgb(0, 0, 0, 0.85);
+  width: 100%;
+}
+header {
+  padding: 5px 90px;
+  transition: 0.7s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .nav-items .nav-link {
+  padding: 10px 20px;
+}
+.nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.nav-link i {
+  padding-right: 15px;
+}
+.nav-link:hover {
+  transition: 8s ease-in-out;
+  border-bottom: 3px solid #fff;
+}
+.logo-wrapper {
+}
+.logo-wrapper a {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+#menu-icon {
+  display: none;
+}
+.all-part {
+  padding: 100px 90px;
+}
+@media (max-width: 1155px) {
+  header {
+    width: 100%;
+    padding: 20px 40px;
+  }
+  .all-part {
+    width: 100%;
+    padding: 100px 40px;
+  }
+  .social-media a {
+    padding-bottom: 20px;
+    margin-right: 10%;
+    position: relative;
+    bottom: 20%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1056px) {
+  #menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .nav-items {
+    display: none;
+  }
+  /* .img-overlay {
+    height: 100vh;
+  } */
+  .open-nav {
+    /* background-color: #fff;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6em;
+    width: 100%;
+    color: #000;
+    position: relative;
+    right: 10%;
+
+    height: 70vh;
+    padding-bottom: 20px;
+    transition-property: all;
+    /* transition-timing-function: linear; */
+  }
+  .main-none {
+    display: none;
+  }
+
+  .open-nav a {
+    margin-top: 30px;
+    color: #fff;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  .logo-wrapper a {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .nav-link {
+    font-size: 17px;
+    font-weight: 300;
+  }
+}
