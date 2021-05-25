@@ -10,18 +10,20 @@ body {
   background-image: url("../img/sharpen-enlarge-2x-bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+
+  object-fit: cover;
 
   /* background-position: center; */
 }
 .img-overlay {
   background-color: rgb(0, 0, 0, 0.85);
   width: 100%;
-  height: 100vh;
+  height: 120vh;
 }
 header {
   padding: 5px 90px;
   transition: 0.7s ease;
+  width: 100%;
 }
 
 nav {
@@ -83,17 +85,14 @@ nav .nav-items .nav-link {
   #menu-icon {
     display: block;
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
   }
   .nav-items {
     display: none;
   }
-  /* .img-overlay {
-    height: 100vh;
-  } */
+
   .open-nav {
-    /* background-color: #fff;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,7 +101,7 @@ nav .nav-items .nav-link {
     width: 100%;
     color: #000;
     position: relative;
-    right: 10%;
+    right: 4%;
 
     height: 70vh;
     padding-bottom: 20px;
@@ -123,6 +122,15 @@ nav .nav-items .nav-link {
     width: 100%;
     padding: 5px 10px;
   }
+  header nav {
+    padding-right: 20px;
+  }
+  #menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
   .logo-wrapper a {
     font-size: 20px;
     font-weight: 600;
@@ -131,16 +139,20 @@ nav .nav-items .nav-link {
     font-size: 17px;
     font-weight: 300;
   }
-  .img-overlay {
-    width: 100%;
+  .nav-link i {
+    display: none;
   }
 }
-@media (max-width: 350px) {
-  #menu-icon {
-    display: flex;
-    font-size: 20px;
+@media (max-width: 350px) and(max-width:300px) and (max-width: 280px) {
+  .nav-link {
+    font-size: 15px;
+    font-weight: 100;
   }
-  .nav-link i {
-    padding-right: 5px;
+  .new-menu {
+    font-size: 20px;
+    padding-right: 60px;
+  }
+  .open-nav a {
+    margin-top: 5px;
   }
 }
