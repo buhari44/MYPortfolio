@@ -3,9 +3,7 @@ body {
   background-image: url("../img/sharpen-enlarge-2x-bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
   object-fit: cover;
-  height: 100%;
 
   /* background-position: center; */
 }
@@ -137,21 +135,24 @@ section .social-media a {
     padding-left: 10px;
     font-family: "Poppins", sans-serif;
   }
+  .img-overlay {
+    height: 100%;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .topic h1 {
     font-size: 2em;
     font-weight: 600;
   }
   input {
     padding: 10px 0;
-    padding-right: 5px;
+    padding-right: 18px;
     font-size: 10px;
-    padding-left: 40px;
+    padding-left: 10px;
   }
   button {
     background-color: rgba(48, 92, 204, 0.5);
-    padding: 12px 65px;
+    padding: 12px 69px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -169,5 +170,11 @@ section .social-media a {
     font-size: 20px;
     padding-left: 10px;
     font-family: "Poppins", sans-serif;
+  }
+  section .social-media {
+    gap: 10px;
+  }
+  section .social-media a {
+    font-size: 19px;
   }
 }
