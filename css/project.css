@@ -20,6 +20,9 @@ section .projects {
 .personal-project > div {
   width: 40%;
 }
+.personal-project>div:hover{
+  width: 70%;
+}
 
 .my-projects {
   border-top-left-radius: 50%;
