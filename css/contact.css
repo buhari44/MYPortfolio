@@ -31,16 +31,17 @@ input {
   font-weight: 300;
 }
 
-input[type="text"] {
+/* input[type="text"] {
   color: black;
-}
+} */
 input {
-  padding: 10px 0;
-  padding-right: 70px;
+  padding: 10px 10px;
+   padding-right: 70px;
+   color:#000;
   outline: none;
   border: none;
   font-size: 20px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   font-family: "Poppins", sans-serif;
 }
 button {
