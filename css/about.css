@@ -3,12 +3,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .img-overlay {
   background-color: rgb(0, 0, 0, 0.85);
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+   /* height: 400%;  */
 }
 section {
   width: 100%;
@@ -57,19 +57,17 @@ button {
 }
 /* monsary css */
 .monsary {
-   padding:20px 50px;
+  padding: 20px 50px;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 0.3fr);
   gap: 10px;
-  grid-auto-rows: minmax(40px,150px);
-
-  
+  grid-auto-rows: minmax(40px, 150px);
 }
 .monsary > div {
-  border: 3px solid #fff
+  border: 3px solid #fff;
 }
-.monsary>div img{
+.monsary > div img {
   width: 100%;
   height: 100%;
 }
@@ -114,6 +112,37 @@ footer {
   .img-wrapper {
     margin: 20px 0;
   }
+  .monsary {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(150px, auto);
+  }
+  .one {
+  grid-column: 1;
+  grid-row: 4;
+}
+.two {
+  grid-column: 1;
+  grid-row: 3 ;
+}
+.three {
+  grid-column: 1;
+  grid-row: 1;
+}
+.four {
+  grid-column: 1;
+  grid-row: 3;
+}
+.five {
+  grid-column: 1;
+  grid-row: 3;
+}
+.six {
+  grid-column: 1;
+  grid-row: 2;
+}
 }
 @media (max-width: 500px) {
   .hire {
@@ -134,18 +163,9 @@ footer {
     border-radius: 50%;
   }
 
-.text-wrapper p {
-  font-size: 20px;
-}
-.monsary {
-
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(1, 0.8fr);
-  gap: 10px;
-  grid-auto-rows: minmax(150px, auto);
-  
-}
+  .text-wrapper p {
+    font-size: 20px;
+  }
 }
 @media (max-width: 300px) {
   .text-wrapper h1 {
