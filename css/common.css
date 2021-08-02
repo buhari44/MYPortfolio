@@ -50,6 +50,18 @@ nav .nav-items .nav-link {
 .all-part {
   padding: 60px 90px;
 }
+.resume {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.resume h4 {
+  font-size: 23px;
+  font-weight: 400;
+}
+.resume a {
+  text-align: center;
+}
 @media (max-width: 1155px) {
   header {
     width: 100%;
@@ -89,7 +101,7 @@ nav .nav-items .nav-link {
     color: #000;
     position: relative;
     right: -4%;
-   height: 70vh;
+    height: 70vh;
     padding-bottom: 20px;
     transition-property: all;
     /* transition-timing-function: linear; */
@@ -124,6 +136,10 @@ nav .nav-items .nav-link {
   .nav-link {
     font-size: 17px;
     font-weight: 300;
+  }
+  .resume h4 {
+    font-size: 14px;
+    font-weight: 400;
   }
   /* .nav-link i {
     display: none;
