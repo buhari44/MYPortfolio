@@ -87,12 +87,7 @@ footer {
 .myname {
   font-size: 20px;
 }
-.animate__animated.animate__bounce {
-  --animate-duration: 10s;
-}
-.animate__animated.animate__backInRight {
-  --animate-duration: 1s;
-}
+
 @media (max-width: 1155px) {
   .all-part {
     width: 100%;
