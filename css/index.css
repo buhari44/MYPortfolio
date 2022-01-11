@@ -172,3 +172,9 @@ footer {
     border-radius: 30px;
   }
 }
+@media (max-width: 500px) {
+  .tools{
+display: flex;
+flex-wrap: wrap;
+  }
+  }
