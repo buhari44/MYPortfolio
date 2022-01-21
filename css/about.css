@@ -22,9 +22,10 @@ section > div {
 .img-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 .img-wrapper img {
-  width: 50%;
+  width: 60%;
   height: 50vh;
   border-radius: 50%;
 }

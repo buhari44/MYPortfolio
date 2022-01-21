@@ -20,9 +20,9 @@ section .projects {
 .personal-project > div {
   width: 40%;
 }
-.personal-project>div:hover{
+/* .personal-project>div:hover{
   width: 70%;
-}
+} */
 
 .my-projects {
   border-top-left-radius: 50%;
@@ -43,11 +43,11 @@ section .projects {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-decoration: none;
-  background-color: #fff;
-  color: #000;
-  border: 2px solid black;
+  background-color: #000;
+  /* border: 2px solid black; */
   border-radius: 20px;
   margin-top: 4px;
+  padding: 0 10px;
 }
 .project-desc {
   background-color: #fff;
