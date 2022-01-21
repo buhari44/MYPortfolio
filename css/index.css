@@ -1,8 +1,7 @@
 body {
-  /* background-image: url("../img/sharpen-enlarge-2x-bg-img.jpg"); */
+  background-image: url("../img/sharpen-enlarge-2x-bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
   object-fit: cover;
 
   /* background-position: center; */
@@ -10,8 +9,8 @@ body {
 .img-overlay {
   background-color: rgb(0, 0, 0, 0.85);
   width: 100%;
-   /* height: 110vh ;  */
-   object-fit: fill;
+  height: 105vh 
+   /* object-fit: fill; */
 }
 main {
   width: 100%;
