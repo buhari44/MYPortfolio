@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        .img-overlay {
+    background-image: url("img/istockphoto-856692422-170667a.jpg");
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+  }
+
+  img{
+      width: 50%;
+      height: 50%;
+      border-radius: 10px;
+  }
+
+  p{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+  }
+  /* loader */
+
+
+
+.dot {
+  width: 24px;
+  height: 24px;
+  background: #3ac;
+  border-radius: 100%;
+  display: inline-block;
+  animation: slide 1s infinite;
+}
+.dot:nth-child(1) {
+  animation-delay: 0.1s;
+  background: #32aacc;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+  background: #64aacc;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.3s;
+  background: #96aacc;
+}
+.dot:nth-child(4) {
+  animation-delay: 0.4s;
+  background: #c8aacc;
+}
+.dot:nth-child(5) {
+  animation-delay: 0.5s;
+  background: #faaacc;
+}
+@-moz-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media(max-width:500px){
+    img{
+     width: 40%;
+     height: 30% ;
+   } 
+   p{
+     font-size: 20px;
+     font-weight: bolder;
+   }
+}
+
+@media(max-width:350px){
+    img{
+     width: 80%;
+     height: 30% ;
+   } 
+   p{
+     font-size: 16px;
+     font-weight: bolder;
+   }
+   .loader{
+   margin-top: 30px;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="img-overlay">
+
+      <img src="./img/WhatsApp Image 2022-01-28 at 19.08.37.jpeg" alt="">
+      <div>
+        <p>efile eje ko load</p>
+      </div>
+      
+      <div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+  </div>
+    
+    
+</body>
+<script>
+    setTimeout(() => {
+         window.location.assign("/public/home.html")
+    }, 6000);
+</script>
+</html>
